@@ -1,0 +1,31 @@
+.text-primary{
+    font-family: "Bold";
+    color: #787878;
+}
+.col-md-8 p{
+    font-size: 14px;
+}
+.col-md-8 a{
+    color: #eb6b25;
+}
+.col-md-8 .big{
+    font-size: 24px !important;
+}
+.list-circle li{
+    font-size: 14px;
+}
+.article-content p + p, .article-content li + p{
+    margin-top: 15px;
+}
+.article-sep{
+    margin: 15px 0px;
+}
+.btn-sweat{
+    color: white !important;
+}
+.list-circle li + li{
+    margin-top: 0px;
+}
+.a_regular{
+    font-family: inherit;
+}

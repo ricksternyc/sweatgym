@@ -1,0 +1,82 @@
+.widget-map
+	.map-info
+		margin-bottom: 15px
+		i
+			float: left
+			font-size: 28px
+		span
+			display: block
+			padding-left: 35px
+	.map-wrapper
+		position: relative
+		overflow: hidden
+		padding-left: 35px
+
+		@include max995
+			padding-left: 0
+		> div
+			// background: $color-bg-gray
+			width: 100%
+			height: 150px
+
+.widget-touch
+	.touch-email
+		margin-bottom: 15px
+		i
+			float: left
+			font-size: 28px
+		a
+			display: block
+			padding-left: 35px
+
+	.list-touch
+		list-style: none outside none
+		margin: 0
+			left: 45px
+		padding: 0
+		text-align: left
+
+		@include max995
+			margin-left: 0
+		li
+			display: inline-block
+			a
+				display: block
+				margin-right: 20px
+				font-size: 28px
+
+.site-footer-widget
+	position: relative
+
+	+ .site-footer-widget
+		@include max995
+			margin-top: 30px
+	&:after
+		content: ''
+		position: absolute
+		width: 1px
+		height: 45px
+		background: white
+		left: 97%
+		display: block
+		top: 0
+		@include max995
+			display: none
+
+	&.last
+		&:after
+			width: 0
+
+	&-content
+		padding:
+			left: 15px
+			right: 15px
+
+	&.widget-touch
+		.touch-email,
+		.list-touch
+			a
+				color: white
+				&:hover,
+				&:focus
+					@include opacity(.7)

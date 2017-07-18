@@ -1,0 +1,26 @@
+.text-primary{
+    /*text-transform: uppercase;*/
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    color: inherit;
+
+}
+.item-testimoni + .item-testimoni{
+    margin-top: 15px;
+}
+.section.text-center{
+    padding: 20px 0px 30px 0px;
+}
+.section-header-title>span{
+    font-weight: initial;
+    font-size: 14px;
+    /*font-family: "Bold";*/
+}
+.item-testimoni p{
+    font-size: 14px;
+    font-style: normal;
+}
+.col-md-8.col-md-offset-2 p{
+    font-size: 16px;
+}

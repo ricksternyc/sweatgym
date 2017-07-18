@@ -1,0 +1,25 @@
+.item-instructor-description>h3{
+    margin-bottom: 15px !important;
+}
+.item-instructor-description>p{
+    margin-top: 15px !important;
+}
+.item-instructor.big{
+    margin-bottom: 65px !important;
+}
+.item-instructor.big .item-instructor-description p{
+    font-size: 14px;
+}
+article header h1, .item-instructor-description h3{
+    color: #787878;
+    text-transform: uppercase;
+}
+article header h1{
+    font-family: "Bold";
+    font-size: 36px;
+
+}
+
+.section-header-title{
+    line-height: 1.5;
+}

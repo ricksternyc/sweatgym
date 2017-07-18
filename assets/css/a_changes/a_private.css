@@ -1,0 +1,19 @@
+.col-md-8 p{
+    font-size: 14px;
+
+}
+.article-content p + p, .article-content li + p{
+    margin-top: 15px;
+
+}
+.article-sep{
+    margin: 15px 0px;
+}
+
+.text-primary{
+    font-family: "Bold";
+    color: #787878;
+}
+.list-circle li{
+    font-size: 14px;
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Bold";
+    src: url("../../fonts/a_fonts/DejaVuSans-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Regular";
+    src: url("../../fonts/a_fonts/DejaVuSans.ttf") format("truetype");
+}
+
+body{
+    line-height: initial;
+    font-weight: initial;
+    /*font-family: "Regular";*/
+}
+.site-footer{
+    padding: 45px 0 30px;
+}
+.site-header{
+    padding: 15px 0px;
+}
+.section-header-title{
+    color: #787878;
+    /*font-weight: bold;*/
+    line-height: initial;
+}
+.on-page{
+    padding: 20px 0px;
+}
+.a_section-name{
+    font-family: "Bold";
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #787878;
+}
+.site-footer{
+    font-size: 14px;
+}
+.a_big{
+    font-size: 24px;
+    text-transform: none;
+    font-family: "Bold"
+}

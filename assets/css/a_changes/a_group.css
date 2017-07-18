@@ -1,0 +1,11 @@
+h1{
+    color: inherit !important;
+}
+.article-content p, .article-content li{
+    font-size: 14px !important;
+    margin-top: 20px !important;
+}
+.text-primary{
+    font-family: "Bold";
+    color: #787878;
+};

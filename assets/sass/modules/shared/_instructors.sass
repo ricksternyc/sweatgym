@@ -1,0 +1,62 @@
+.item-instructor
+	margin-bottom: 30px
+	&-content
+		position: relative
+	&-images
+		float: left
+		width: 160px
+		@include max570
+			margin:
+				right: 15px
+				bottom: 5px
+	&-description
+		margin-left: 185px
+		@include max570
+			margin-left: 0
+		h3
+			@include FuturaLight
+			font: 
+				size: 16px
+				weight: bold
+			margin: 0 0 15px
+			color: $color-primary
+		p
+			font-size: 14px
+			+ p
+				margin-top: 15px
+
+	&.big
+		margin-bottom: 90px
+		@include max995
+			margin-bottom: 60px
+		@include max570
+			margin-bottom: 45px
+		.item-instructor-images
+			width: 335px
+			@include max995
+				margin:
+					right: 30px
+					bottom: 15px
+			@include max350
+				width: 100%
+		.item-instructor-description
+			margin-left: 370px
+			@include max995
+				margin-left: 0
+			@include max570
+				float: left
+				margin-top: 15px
+			h3
+				font-size: 25px
+				margin: 0 0 30px
+				@include max995
+					font-size: 21px
+					margin-bottom: 15px
+			p
+				font-size: 18px
+				@include max995
+					font-size: 16px
+				+ p
+					margin-top: 30px
+					@include max995
+						margin-top: 15px

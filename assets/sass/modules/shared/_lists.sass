@@ -1,0 +1,36 @@
+ul, ol
+	&.reset-list
+		list-style: none outside none
+		margin: 0
+		padding: 0
+
+.list
+	&-circle,
+	&-flat
+		list-style: none outside none
+		margin: 0
+		padding: 0
+
+	&-circle
+		margin: 15px 15px
+		padding: 0
+		li
+			padding-left: 10px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				height: 4px
+				width: 4px
+				border-radius: 50%
+				top: 10px
+				left: 0
+				background: $color-text
+
+			+ li
+				margin-top: 10px
+
+	&-flat
+		li
+			+ li
+				margin-top: 5px

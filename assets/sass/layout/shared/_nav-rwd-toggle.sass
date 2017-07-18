@@ -1,0 +1,73 @@
+/* THIS FILE
+ * Handling for responsive navigation
+/* --------------------------------------------------- */
+
+.site-header-nav-primary
+	@include max1200
+		display: none
+
+.rwd-navigation
+	display: none
+	float: right 
+	position: relative
+	@include max1200
+		display: block
+
+	@include max350
+		width: 100%
+		float: left
+
+	&-btn
+		width: 30px
+		height: 30px
+		line-height: 30px
+		text-align: center
+		transition: ease .3s
+		display: block
+		color: white
+		background-color: $color-primary
+		cursor: pointer
+		font-size: 14px
+
+		@include max350
+			width: 100%
+
+	.mobile-nav
+		position: absolute
+		top: 100%
+		right: 0
+		min-width: 175px
+		background: $color-primary
+		list-style: none outside none
+		margin: 0
+		padding: 0
+		z-index: 999
+		@include max350
+			width: 100%
+		li
+			display: block
+			> a
+				color: white
+				font:
+					size: 13px
+					weight: bold
+				display: block
+				padding: 5px 10px
+				text-transform: uppercase
+				&:hover,
+				&:focus
+					background: $color-text
+
+/* Handle for rwd-nav-link ONLY
+/* --------------------------------------------------- */
+.rwd-nav-link
+	list-style: none outside none
+	margin: 0
+		top: 30px
+	padding: 0
+	text-align: center
+	@include max350
+		margin-top: 15px
+	li
+		display: inline-block
+		margin: 0 15px

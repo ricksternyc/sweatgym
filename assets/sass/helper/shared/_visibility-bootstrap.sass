@@ -1,0 +1,15 @@
+// ONLY work for hight to small size
+.hide-in
+	&-md
+		@include max995
+			display: none
+	&-sm
+		@media(max-width: $sm)
+			display: none
+
+// ONLY work for hight TO small size
+.show-in
+	&-md
+		display: none
+		@include max995
+			display: block

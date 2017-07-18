@@ -1,0 +1,24 @@
+$spacing: (space15, 15px), (space30, 30px)
+
+@each $space-class, $space-prop in $spacing
+	.#{$space-class}
+		width: 100%
+		height: $space-prop
+		display: block
+
+.nospace
+	&-top
+		padding-top: 0 !important
+		margin-top: 0 !important
+	&-bottom
+		padding-bottom: 0 !important
+		margin-bottom: 0 !important
+	&-left
+		padding-left: 0 !important
+		margin-left: 0 !important
+	&-right
+		padding-right: 0 !important
+		margin-right: 0 !important
+	&-everywhere
+		padding: 0 !important
+		margin: 0 !important

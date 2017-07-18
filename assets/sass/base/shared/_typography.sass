@@ -1,0 +1,67 @@
+body,
+button,
+input,
+select,
+textarea
+
+h1, h2, h3, h4, h5, h6
+	@include FuturaBold
+	// font-weight: bold
+
+h1
+	font-size: 44px
+	@include max995
+		font-size: 41px
+
+h2
+	font-size: 24px
+	@include max995
+		font-size: 21px
+
+h3
+	font-size: 21px
+	@include max995
+		font-size: 18px
+
+h5
+	font-size: 17px
+	@include max995
+		font-size: 16px
+p
+	margin: 0
+
+dfn, cite em, i
+	// font-style: italic
+
+blockquote
+
+address
+
+pre
+	font-family:  "Courier 10 Pitch", Courier, monospace
+
+code, kbd, tt, var
+	 font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+abbr, acronym
+	cursor: help
+
+mark, ins
+
+big
+	font-size: 125%
+
+
+blockquote
+	quotes: "" ""
+
+blockquote
+	&:before,
+	&:after
+		content: ""
+
+.big
+	font-size: 19px
+
+.small
+	font-size: 16px

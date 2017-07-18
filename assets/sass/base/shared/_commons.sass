@@ -1,0 +1,18 @@
+body,
+html
+	height: 100%
+	
+body
+	color: $color-text
+	// @include FuturaHeavy
+	@include FuturaLight
+	font:
+		size: 19px
+		weight: bold
+	background: white
+	line-height: 1.6
+	@include max995
+		font-size: 16px
+
+[class^="icon-"]:before, [class*=" icon-"]:before 
+	cursor: inherit

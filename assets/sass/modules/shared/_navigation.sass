@@ -1,0 +1,27 @@
+.nav-pages
+	padding: 0 
+	background: $color-bg-gray
+	ul
+		list-style: none outside none
+		margin: 0
+		padding: 0
+		@include max995
+			text-align: left
+		li
+			display: inline-block
+			@include max995
+				display: block
+				margin-top: 15px
+			&:last-child
+				@include max995
+					margin-bottom: 15px
+			a
+				margin: 30px 30px
+				@include max1200
+					margin: 15px 5px
+					font:
+						size: 16px
+				@include max995
+					margin: 0
+					font-size: 14px
+					padding: 5px 10px

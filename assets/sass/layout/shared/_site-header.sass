@@ -1,0 +1,120 @@
+.site-header
+	position: relative
+	padding: 30px 0
+	border-bottom: 1px solid $color-border
+	@include max570
+		padding-bottom: 15px
+	&-left
+		float: left
+	&-right
+		float: right
+		padding: 20px 0
+		@include max1200
+			padding: 0
+			margin-top: 30px
+		@include max767
+			margin-top: 15px
+		@include max570
+			margin-top: 45px
+		@include max350
+			margin-top: 15px
+	&-left,
+	&-right
+		@include max350
+			float: left
+			width: 100%
+
+	&-top,
+	&-bottom
+		position: relative
+		// width: 100%
+		float: right
+
+	&-bottom
+		@include max350
+			width: 100%
+			float: left
+
+	&-top
+		margin-bottom: 20px
+		@include max1200
+			margin-bottom: 10px
+		@include max570
+			display: none
+
+	&-logo
+		float: left
+
+
+	&-nav
+		&-link,
+		&-primary
+			float: right
+			ul
+				list-style: none outside none
+				margin: 0
+				padding: 0
+		&-link
+			ul
+				li
+					float: left
+					margin-left: 20px
+					@include max767
+						float: none
+						display: block
+						text-align: right
+
+
+		&-primary
+			ul
+				li
+					float: left
+					&:first-child
+						> a
+							margin-left: 0
+					&:hover,
+					&:focus
+						> a
+							color: $color-primary
+					> a
+						@include FuturaHeavy
+						font:
+							size: 13px
+							weight: bold
+						letter-spacing: 1px
+						display: block
+						color: $color-nav
+						text-transform: uppercase
+						margin-left: 20px
+
+	&-rwd
+		&-bottom
+			display: none
+			float: left
+			width: 100%
+			@include max570
+				display: block
+
+.site-header-nav-link,
+.rwd-nav-link
+	li
+		> a
+			display: block
+			@include FuturaBold
+			font:
+				weight: bold
+				size: 19px
+			text-transform: uppercase
+			color: $color-primary
+			letter-spacing: 2px
+			@include max1200
+				font-size: 16px
+			@include max350
+				font-size: 12px
+			i
+				position: relative
+				top: 2px
+				@include max1200
+					top: 4px
+
+
